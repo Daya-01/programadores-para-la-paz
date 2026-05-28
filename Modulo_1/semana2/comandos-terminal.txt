@@ -1,0 +1,10 @@
+pwd
+cd
+cd desktop
+cd programadores-para-la-paz
+cd modulo 1
+mkdir semama2
+cd semana2
+touch preguntas-semana2.txt
+touch comandos-terminal.txt
+touch reflexión-semana2.txt
