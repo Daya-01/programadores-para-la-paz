@@ -1,0 +1,7 @@
+Es importante porque herramientas como Git permiten guardar un historial de todos los cambios realizados 
+en un proyecto, esto ayuda a recuperar versiones anteriores si ocurre un error o se elimina información 
+importante.
+
+Además, facilita el trabajo en equipo, ya que varias personas pueden modificar el mismo proyecto sin
+perder el control de los cambios realizados, también permite identificar quién hizo cada modificación
+y en qué momento se realizó.
