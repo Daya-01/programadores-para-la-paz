@@ -1,0 +1,4 @@
+Lo que hace la ruta es recibir un mensaje y contestar nuevamente
+el mensaje en un archivo json
+
+El POST nos sirve en una aplicación comunitaria para compartir información importantante

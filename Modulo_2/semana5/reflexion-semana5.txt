@@ -1,0 +1,3 @@
+Las APIs ayudan a que las comunidades comprtan información de manera organizada
+porque permiten conectar diferentes aplicaciones y sistemas, gracias a ellas, los eportes, alertas 
+y publicaciones pueden enviarse, actualizarce y consultarse 
