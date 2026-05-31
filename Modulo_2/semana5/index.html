@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Página web para probar el POST
+    <script>
+        console.log('funciona')
+        fetch('https://super-space-broccoli-56vw9qx67ghvvr6-3000.app.github.dev/reporte', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                mensaje: 'finalizalización de la tarea de la semana 5'
+            })
+        })
+        .then(respuesta => respuesta.json())
+        .then(datos => console.log('Éxito:', datos))
+        .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

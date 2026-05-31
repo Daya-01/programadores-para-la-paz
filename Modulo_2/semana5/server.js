@@ -1,6 +1,15 @@
-const express = require('express');
+const express = require('express');
+const cors = require('cors');
+
 const app = express();
 
+// Permite todos los orígenes y todos los métodos HTTP
+const opcionesCors = {
+  origin: '*', // Permite cualquier sitio web
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'] // Métodos explícitos
+};
+
+app.use(cors(opcionesCors));
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -16,5 +25,15 @@ app.get('/mensaje/:nombre', (req, res) => {
   res.send('Hola ' + nombre);
 });
 
+app.post('/reporte', (req, res) => {
+  console.log('peticion recibida')
+  const mensaje = req.body.mensaje;
+  res.json({
+    estado: "Reporte recibido",
+    mensaje: mensaje
+  });
+});
+
 app.listen(3000, () => {
   console.log('Servidor ejecutándose en puerto 3000');
+});
